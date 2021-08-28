@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org
+http://www.thymeleaf.org ">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div class = "headerWrapper">
+
+    <div class = "logo">
+    <h1 id ="anwar">Anwar</h1>
+    <h1 id="hub">Hub</h1>
+    </div>
+
+    <div class = "nav">
+        <button onclick = "window.location.href='ListOfStudents'">Hottest Topics</button>
+        <button onclick = "window.location.href='ListOfStudents'">Support Us</button>
+        <button onclick = "window.location.href='ListOfStudents'">About Us</button>
+    </div>
+
+    </div>
+</header>
+
+<div class = "wrapper">
+<div class = "loginFormDiv">
+<form action="#" th:action="@{/student}" th:object="${Student}" method="POST"  class = "initialForms" >
+    <h4> New? Might as well register..</h4>
+        <input placeholder="Enter Your Name" type="text" th:field="*{name}" class = "inputFromUser" required/>
+    <br>
+         <input placeholder="Enter Your Email" type="email" th:field="*{email}" class = "inputFromUser" required/>
+    <br>
+    <input type = "radio" class = "radio"><label class = "radio">Remember Me</label>
+    <br>
+        <input type="submit" value="submit" class = "submitBtn">
+    <br>
+        <input type="reset" value="reset" class = "submitBtn">
+    <br>
+</form>
+</div>
+
+<div class = "loginFormDiv">
+    <form action="#" th:action="@{/student}" th:object="${Student}" method="POST" class = "initialForms" >
+        <h4> Have an account? Login to see some.. stuff</h4>
+        <input placeholder="Enter Your Name" type="text" th:field="*{name}" class = "inputFromUser" required/>
+        <br>
+        <input placeholder="Enter Your Email" type="email" th:field="*{email}" class = "inputFromUser" required/>
+        <br>
+        <input type = "radio" class = "radio"><label class = "radio">Remember Me</label>
+        <br>
+        <input type="submit" value="submit" class = "submitBtn">
+        <br>
+        <input type="reset" value="reset" class = "submitBtn">
+        <br>
+    </form>
+</div>
+
+</div>
+
+<br>
+<br>
+
+<footer>
+    <p>AnwarHub is the greatest Palestinian educative website. Whether you want to learn and educate yourself, or learn
+    new things that you've never seen before, we PROMISE that this website won't disappoint. Try it now and you won't regret it.</p>
+    <br>
+    <h1> Don't believe us?</h1>
+    <p class = "checkout"> Check out how many people are... learning (wink)</p>
+</footer>
+
+<div class = "LOP">
+<button onclick = "window.location.href='ListOfStudents'">View List Of Perverts </button>
+</div>
+
+</body>
+</html>
