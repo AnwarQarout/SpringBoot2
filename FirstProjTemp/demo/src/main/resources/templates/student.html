@@ -27,7 +27,7 @@ http://www.thymeleaf.org ">
 
 <div class = "wrapper">
 <div class = "loginFormDiv">
-<form action="#" th:action="@{/student}" th:object="${Student}" method="POST"  class = "initialForms" >
+<form action="#" th:action="@{/category}" th:object="${Student}" method="POST"  class = "initialForms" >
     <h4> New? Might as well register..</h4>
         <input placeholder="Enter Your Name" type="text" th:field="*{name}" class = "inputFromUser" required/>
     <br>
@@ -43,7 +43,7 @@ http://www.thymeleaf.org ">
 </div>
 
 <div class = "loginFormDiv">
-    <form action="#" th:action="@{/student}" th:object="${Student}" method="POST" class = "initialForms" >
+    <form action="#" th:action="@{/category}" th:object="${Student}" method="POST" class = "initialForms" >
         <h4> Have an account? Login to see some.. stuff</h4>
         <input placeholder="Enter Your Name" type="text" th:field="*{name}" class = "inputFromUser" required/>
         <br>

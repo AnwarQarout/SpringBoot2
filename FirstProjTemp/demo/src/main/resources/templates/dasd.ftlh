@@ -24,12 +24,12 @@ http://www.thymeleaf.org ">
         </th>
     </tr>
 
-    <#list result as student>
+    <#list result as category>
         <tr>
-            <td> ${student.id}</td>
-            <td>${student.dob}</td>
-            <td>${student.email}</td>
-            <td>${student.name}</td>
+            <td> ${category.id}</td>
+            <td>${category.dob}</td>
+            <td>${category.email}</td>
+            <td>${category.name}</td>
         </tr>
     </#list>
 </table>
